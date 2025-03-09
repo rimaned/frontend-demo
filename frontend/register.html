@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="/style/registerstyle.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#">
+      <h2>Register</h2>
+      
+      <div class="form-group">
+        <div class="input-field">
+          <input type="text" required>
+          <label>Full Name</label>
+        </div>
+        <div class="input-field">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="input-field">
+          <input type="text" required>
+          <label>Age</label>
+        </div>
+        <div class="input-field">
+          <select required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="input-field">
+          <select required>
+            <option value="student" selected>Role : Student</option>
+          </select>
+        </div>
+        <div class="input-field full-width">
+          <input type="text" required>
+          <label>Phone Number</label>
+        </div>
+      </div>
+<br>
+      <button type="submit">Register</button>
+
+      <div class="register">
+        <p>Already have an account? <a href="/frontend/login.html" target="_blank">Login</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style/adminstyle.css">
+  <script defer src="/script/admin.js"></script>
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li><a href="#" class="active" onclick="showSection('dashboard')">Dashboard</a></li>
+      <li><a href="#" onclick="showSection('manageMyAccount')">Manage My Account</a></li>
+      <li><a href="#" onclick="showSection('manageAccounts')">Manage Accounts</a></li>
+      <li><a href="#" onclick="showSection('configApp')">Configure App</a></li>
+      <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <button class="menu-btn" onclick="toggleSidebar()">
+      <i class="ri-menu-line"></i>
+    </button>
+
+    <div id="dashboard" class="content-section">
+      <h2>Dashboard</h2>
+      <p>Welcome to the admin panel.</p>
+    </div>
+
+    <div id="manageAccounts" class="content-section hidden">
+      <h2>Manage Accounts</h2>
+      <p>Here you can manage user accounts.</p>
+      <table>
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td>rima ned</td>
+          <td>rimaned@gmail.com</td>
+          <td>Student</td>
+          <td><button>Edit</button> <button>Delete</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="configApp" class="content-section hidden">
+      <h2>Configure App</h2>
+      <p>Settings and configurations for the application.</p>
+    </div>
+
+    <div id="manageMyAccount" class="content-section hidden">
+        <h2>Manage My Account</h2>
+        <form class="account-form">
+          <div class="input-field">
+            <input type="text" id="adminName" required>
+            <label for="adminName">Full Name</label>
+          </div>
+          <div class="input-field">
+            <input type="email" id="adminEmail" required>
+            <label for="adminEmail">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="adminpassword" required>
+            <label for="adminpassword">New password (optional)</label>
+          </div>
+          <button type="submit" class="update-btn">Update Account</button>
+        </form>
+      </div>
+      
+
+  </div>
+
+</body>
+</html>
