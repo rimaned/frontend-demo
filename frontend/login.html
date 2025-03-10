@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login page</title>
-  <link rel="stylesheet" href="/style/loginstyle.css">
-</head>
-<body>
-  <div class="wrapper">
-    <form action="#">
-      <h2>Login</h2>
-      
-      <div class="form-group">
-        <div class="input-field full-width">
-          <input type="text" required>
-          <label>Username</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="../style/loginstyle.css" />
+    <script src="../script/forms.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="#">
+        <h2>Login</h2>
+
+        <div class="form-group">
+          <div class="input-field full-width">
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="input-field full-width">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
         </div>
-        <div class="input-field full-width">
-          <input type="password" required>
-          <label>Password</label>
+        <br />
+
+        <button type="submit">Login</button>
+
+        <div class="register">
+          <p>
+            Don't have an account?
+            <a href="register.html" target="_blank">Register</a>
+          </p>
         </div>
-      </div><br>
-  
-      <button type="submit">Login</button>
-  
-      <div class="register">
-        <p>Don't have an account? <a href="/frontend/register.html" target="_blank">Register</a></p>
-      </div>
-    </form>
-  </div>
-</body>
+      </form>
+    </div>
+  </body>
 </html>
